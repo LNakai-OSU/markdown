@@ -9,7 +9,7 @@ export function useDqnModel() {
 
   useEffect(() => {
     let cancelled = false;
-    ort.InferenceSession.create("/data/dqn_model.onnx")
+    ort.InferenceSession.create(`${import.meta.env.BASE_URL}data/dqn_model.onnx`)
       .then((session) => {
         if (!cancelled) {
           sessionRef.current = session;

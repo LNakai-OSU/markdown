@@ -5,7 +5,7 @@ export function useArtifact(filename) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`/data/${filename}`)
+    fetch(`${import.meta.env.BASE_URL}data/${filename}`)
       .then((res) => {
         if (!res.ok) throw new Error(`${filename}: ${res.status}`);
         return res.json();
