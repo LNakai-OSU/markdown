@@ -1,5 +1,7 @@
 # Markdown
 
+**Live web build:** https://lnakai-osu.github.io/markdown/ — auto-deployed by `.github/workflows/pages.yml` on every push to `main`. No backend at runtime, so it's reachable from any device without this machine being on.
+
 A hands-on introduction to reinforcement learning, built around one real
 business problem instead of three unrelated toy demos: **sell 40 units of a
 product in a 30-day selling window, at whatever price maximizes revenue.**
